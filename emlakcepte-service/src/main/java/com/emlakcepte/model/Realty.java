@@ -12,6 +12,7 @@ public class Realty {
 	private User user;
 	private RealtyType status;
 	private String province;
+	private String district;
 	
 	public Realty() {
 		super();
@@ -65,6 +66,9 @@ public class Realty {
 	public void setProvince(String province) {
 		this.province = province;
 	}
+	public String getDistrict() {return district;}
+
+	public void setDistrict(String district) {this.district = district;}
 
 	@Override
 	public String toString() {

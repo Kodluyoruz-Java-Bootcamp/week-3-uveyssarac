@@ -59,5 +59,19 @@ public class RealtyService {
 				.filter(realty -> RealtyType.ACTIVE.equals(realty.getStatus())).toList();
 
 	}
+	public void getAllByProvinceDistrict(String province, String district) {
+		getAll().stream()
+				.filter(realty -> realty.getProvince().equals(province))
+				.filter(realty -> realty.getDistrict().equals(district))
+				//.count();
+				.forEach(realty -> System.out.println(realty));
+	}
+	public List<Realty> getAllByProvinceDistrictList(String province, String district) {
+		return getAll().stream()
+				.filter(realty -> realty.getProvince().equalsIgnoreCase(province))
+				.filter(realty -> realty.getDistrict().equalsIgnoreCase(district))
+				//.count();
+				.toList();
+	}
 
 }
