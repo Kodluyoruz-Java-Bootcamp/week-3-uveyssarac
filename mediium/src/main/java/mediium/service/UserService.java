@@ -4,9 +4,10 @@ package mediium.service;
 
 import mediium.dao.UserDao;
 import mediium.model.User;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class UserService {
     private UserDao userDao = new UserDao();
 

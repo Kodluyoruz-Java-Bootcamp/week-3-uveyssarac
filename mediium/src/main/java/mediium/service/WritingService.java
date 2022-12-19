@@ -4,9 +4,10 @@ package mediium.service;
 
 import mediium.dao.WritingDao;
 import mediium.model.Writing;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class WritingService {
     private WritingDao writingDao = new WritingDao();
 
