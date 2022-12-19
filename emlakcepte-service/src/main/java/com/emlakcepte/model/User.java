@@ -15,7 +15,7 @@ public class User {
 	private List<Realty>  favoriteRealtyList;
 	private List<Message> messages;
 	private LocalDateTime createDate;
-	
+	private List<List<String>> searchList;
 
 	public User() {
 		super();
@@ -76,7 +76,9 @@ public class User {
 	public void setCreateDate(LocalDateTime createDate) {
 		this.createDate = createDate;
 	}
-	
+	public List<List<String>> getSearchList() {return searchList;}
+	public void setSearchList(List<List<String>> searchList) {this.searchList = searchList;}
+
 	@Override
 	public String toString() {
 		return "User [name=" + name + ", mail=" + mail + ", password=" + password + ", type=" + type +   "createDate="

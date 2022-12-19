@@ -36,4 +36,5 @@ public class RealtyController {
         service.getAllByProvinceDistrict(province, district);
         return service.getAllByProvinceDistrictList(province, district);
     }
+
 }

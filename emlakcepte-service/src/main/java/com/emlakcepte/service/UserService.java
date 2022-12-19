@@ -65,5 +65,9 @@ public class UserService {
 		// @formatter:on
 
 	}
+	public void printAllSearchingByUser(User user) {
+		user.getSearchList().stream().forEach(search -> System.out.println(search.toString()));
+	}
+
 
 }

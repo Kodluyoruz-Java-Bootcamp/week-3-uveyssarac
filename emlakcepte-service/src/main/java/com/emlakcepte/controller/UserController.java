@@ -52,6 +52,14 @@ public class UserController {
 		System.out.println("getByEmail - userService :: " + service);
 		return service.getByEmail(email);
 	}
+	@GetMapping(value = "/{email}")
+	public User getUserSearch(@PathVariable String email) {
+		System.out.println("gelen email request'i: " + email);
+		//UserService service = new UserService();
+		System.out.println("getByEmail - userService :: " + service);
+		return service.getByEmail(email);
+	}
+
 
 	
 	//@PathParam
